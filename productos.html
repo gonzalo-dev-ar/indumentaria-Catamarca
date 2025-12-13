@@ -2,167 +2,171 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GONZALO | PRODUCTOS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONZALO | PRODUCTOS</title>
 
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+                               <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- CSS EXTERNO -->
-  <link rel="stylesheet" href="./CSS/style.css">
+                               <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
 
-  <!-- HEADER / NAVBAR -->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <h1 class="nav-h1">INDUMENTARIA CATAMARCA</h1>
+                             <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <h1 class="nav-h1">INDUMENTARIA CATAMARCA</h1>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="./productos.html">PRODUCTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./quienes-somos.html">QUIENES SOMOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./contacto.html">CONTACTO</a>
-            </li>
-          </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./quienes-somos.html">QUIENES SOMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container my-5">
+
+        <!-- ================== CARRUSEL ================== -->
+        <section class="mb-5">
+
+            <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- FOTO 1 -->
+                    <div class="carousel-item active">
+                        <!-- galeria de fotossss carrusel -->
+                        <img src="./img/fotoCarrusel1.jpg" class="d-block w-100" alt="Producto 1">
+                    </div>
+
+                    <!-- FOTO 2 -->
+                    <div class="carousel-item">
+                        <img src="./img/carrusel2.jpg" class="d-block w-100" alt="Producto 2">
+                    </div>
+
+                    <!-- FOTO 3 -->
+                    <div class="carousel-item">
+                        <img src="./img/carrusel3.jpg" class="d-block w-100" alt="Producto 3">
+                    </div>
+
+                    <!-- FOTO 4 -->
+                    <div class="carousel-item">
+                        <img src="./img/carrusel4.jpg" class="d-block w-100" alt="Producto 4">
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- ================== CARDS ================== -->
+        <section class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <!-- FOTO DEL PRODUCTO -->
+                    <img src="./img/remeraDeportiva-card.jpg" class="card-img-top" alt="Remera deportiva">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Remera Deportiva</h5>
+
+                        <!-- PRECIOSSS -->
+                        <p class="card-text precio">$30.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./img/pelotaFutbol-cards.jpg" class="card-img-top" alt="Pelota">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pelota de Fútbol</h5>
+                        <p class="card-text precio">$70.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 ---->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./img/canilleraFubol-cards.jpg" class="card-img-top" alt="Canilleras">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Canilleras</h5>
+                        <p class="card-text precio">$19.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./img/suplementoDeportivo-cards.png" class="card-img-top" alt="Suplemento">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Suplemento Deportivo</h5>
+                        <p class="card-text precio">$30.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./img/botinesFutbol-cards.jpg" class="card-img-top" alt="Botines">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Botines</h5>
+                        <p class="card-text precio">$130.000</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER ------------------------------------------------------------------------------>
+    <footer class="footer mt-5 py-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2025 INDUMENTARIA CATAMARCA</p>
+            <p class="mb-0">Todos los derechos reservados</p>
         </div>
-      </div>
-    </nav>
-  </header>
+    </footer>
 
-  <!-- MAIN -->
-  <main class="container my-5">
-
-    <!-- ================== CARRUSEL ================== -->
-    <section class="mb-5">
-
-      <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-
-          <!-- FOTO 1 -->
-          <div class="carousel-item active">
-            <!-- galeria de fotossss carrusel -->
-            <img src="./img/fotoCarrusel1.jpg" class="d-block w-100" alt="Producto 1">
-          </div>
-
-          <!-- FOTO 2 -->
-          <div class="carousel-item">
-            <img src="./img/carrusel2.jpg" class="d-block w-100" alt="Producto 2">
-          </div>
-
-          <!-- FOTO 3 -->
-          <div class="carousel-item">
-            <img src="./img/carrusel3.jpg" class="d-block w-100" alt="Producto 3">
-          </div>
-
-          <!-- FOTO 4 -->
-          <div class="carousel-item">
-            <img src="./img/carrusel4.jpg" class="d-block w-100" alt="Producto 4">
-          </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-
-    </section>
-
-    <!-- ================== CARDS ================== -->
-    <section class="row g-4">
-
-      <!-- CARD 1 -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card h-100">
-          <!-- FOTO DEL PRODUCTO -->
-          <img src="./img/remeraDeportiva-card.jpg" class="card-img-top" alt="Remera deportiva">
-          <div class="card-body text-center">
-            <h5 class="card-title">Remera Deportiva</h5>
-
-            <!-- ACA CAMBIAS EL PRECIO -->
-            <p class="card-text precio">$12.000</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card h-100">
-          <img src="./img/pelotaFutbol-cards.jpg" class="card-img-top" alt="Pelota">
-          <div class="card-body text-center">
-            <h5 class="card-title">Pelota de Fútbol</h5>
-            <p class="card-text precio">$18.500</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card h-100">
-          <img src="./img/canilleraFubol-cards.jpg" class="card-img-top" alt="Canilleras">
-          <div class="card-body text-center">
-            <h5 class="card-title">Canilleras</h5>
-            <p class="card-text precio">$6.800</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 4 -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card h-100">
-          <img src="./img/suplementoDeportivo-cards.png" class="card-img-top" alt="Suplemento">
-          <div class="card-body text-center">
-            <h5 class="card-title">Suplemento Deportivo</h5>
-            <p class="card-text precio">$22.000</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 5 -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card h-100">
-          <img src="./img/botinesFutbol-cards.jpg" class="card-img-top" alt="Botines">
-          <div class="card-body text-center">
-            <h5 class="card-title">Botines</h5>
-            <p class="card-text precio">$35.000</p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer mt-5 py-4">
-    <div class="container text-center">
-      <p class="mb-1">© 2025 INDUMENTARIA CATAMARCA</p>
-      <p class="mb-0">Todos los derechos reservados</p>
-    </div>
-  </footer>
-
-  <!-- BOOTSTRAP JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- BOOTSTRAP JS------------------------------------------------------------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

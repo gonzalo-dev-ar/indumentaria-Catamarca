@@ -4,11 +4,14 @@
     font-size: 1rem;
     padding: 5rem, 2rem;
 }
-header{
-    background-image: url(../img/backgroung-header.jpg);
-    background-size: cover;
-    height: 95vh;
+header {
+    background-image: url("../img/img-header-principal.jpg");
+    background-size: cover;        /* ocupa todo el header */
+    background-position: center;   /* centra la imagen */
+    background-repeat: no-repeat;  /* evita que se repita */
+    min-height: 50vh;              /* altura flexible */
 }
+
 
 /* /* archivo contacto */
 /* ============================= */
