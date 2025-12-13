@@ -125,6 +125,87 @@ body {
     font-size: 0.95rem;
   }
 }
+ /* /* css quienes somos  */
+
+ /* GENERAL */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.nav-h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+/* QUIENES SOMOS */
+.quienes-somos {
+  background-color: #f8f9fa;
+}
+
+.titulo-quienes {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.texto-quienes {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.footer h5 {
+  font-weight: bold;
+}
+
+.footer p {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
 
 
+/* ---------------------------------------------------------------------------------------- */
+                                  /* css productos */
+
+                                  /* TITULO NAV */
+.nav-h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* CARRUSEL */
+.carousel img {
+  max-height: 450px;
+  object-fit: cover;
+}
+
+/* CARDS */
+.card {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #198754;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #080808;
+}
 
