@@ -10,6 +10,121 @@ header{
     height: 95vh;
 }
 
-/* seccion de main archivo quuienes somos*/
+/* /* archivo contacto */
+/* ============================= */
+/* RESET BÁSICO */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* ESTILOS GENERALES */
+/* ============================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+.navbar {
+  border-bottom: 2px solid #000;
+}
+
+.nav-h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* ============================= */
+/* SECCIÓN QUIÉNES SOMOS */
+/* ============================= */
+.quienes-somos {
+  background-color: #ffffff;
+}
+
+.titulo-quienes {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.texto-quienes {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* ============================= */
+/* SECCIÓN CONTACTO */
+/* ============================= */
+.contacto {
+  background-color: #f1f1f1;
+}
+
+.titulo-contacto {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.texto-contacto {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Redes sociales */
+.redes a {
+  text-decoration: none;
+}
+
+.icono-red {
+  font-size: 2.2rem;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icono-red:hover {
+  transform: scale(1.2);
+  color: #198754; /* verde estilo fútbol */
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 768px) {
+  .nav-h1 {
+    font-size: 1.2rem;
+  }
+
+  .titulo-quienes,
+  .titulo-contacto {
+    font-size: 1.5rem;
+  }
+
+  .texto-quienes,
+  .texto-contacto {
+    font-size: 0.95rem;
+  }
+}
+
 
 
