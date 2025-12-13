@@ -1,20 +1,4 @@
-.nav-h1{
-    color: rgba(36, 174, 12, 0.8);
-    font-family: "BBH Bartle", sans-serif;
-    font-size: 1rem;
-    padding: 5rem, 2rem;
-}
-header {
-    background-image: url("../img/img-header-principal.jpg");
-    background-size: cover;        /* ocupa todo el header */
-    background-position: center;   /* centra la imagen */
-    background-repeat: no-repeat;  /* evita que se repita */
-    min-height: 50vh;              /* altura flexible */
-}
-
-
-/* /* archivo contacto */
-/* ============================= */
+./* ============================= */
 /* RESET BÁSICO */
 /* ============================= */
 * {
@@ -33,6 +17,17 @@ body {
 }
 
 /* ============================= */
+/* HEADER */
+/* ============================= */
+header {
+  background-image: url("../img/img-header-principal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+/* ============================= */
 /* NAVBAR */
 /* ============================= */
 .navbar {
@@ -40,14 +35,41 @@ body {
 }
 
 .nav-h1 {
+  color: rgba(36, 174, 12, 0.8);
+  font-family: "BBH Bartle", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   margin: 0;
   letter-spacing: 1px;
 }
 
+.nav-link {
+  font-weight: 500;
+}
+
 /* ============================= */
-/* SECCIÓN QUIÉNES SOMOS */
+/* INDEX – HERO */
+/* ============================= */
+.hero {
+  background-color: #ffffff;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hero video {
+  border-radius: 10px;
+}
+
+/* ============================= */
+/* QUIÉNES SOMOS */
 /* ============================= */
 .quienes-somos {
   background-color: #ffffff;
@@ -66,7 +88,7 @@ body {
 }
 
 /* ============================= */
-/* SECCIÓN CONTACTO */
+/* CONTACTO */
 /* ============================= */
 .contacto {
   background-color: #f1f1f1;
@@ -95,11 +117,29 @@ body {
 
 .icono-red:hover {
   transform: scale(1.2);
-  color: #198754; /* verde estilo fútbol */
+  color: #198754;
 }
 
 /* ============================= */
-/* FOOTER */
+/* PRODUCTOS */
+/* ============================= */
+.carousel img {
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #198754;
+}
+
+/* ============================= */
+/* FOOTER (UNIFICADO) */
 /* ============================= */
 .footer {
   background-color: #000;
@@ -119,96 +159,81 @@ body {
   }
 
   .titulo-quienes,
-  .titulo-contacto {
+  .titulo-contacto,
+  .hero-title {
     font-size: 1.5rem;
   }
 
   .texto-quienes,
-  .texto-contacto {
+  .texto-contacto,
+  .hero-text {
     font-size: 0.95rem;
   }
 }
- /* /* css quienes somos  */
+/* ---------------------------------------------------------------------------------------------------- */
 
- /* GENERAL */
-body {
-  font-family: Arial, Helvetica, sans-serif;
+/* --- CSS BASE (TODO el código que te pasé antes) --- */
+
+
+
+
+
+/* ============================= */
+/* MEDIA QUERIES – RESPONSIVE */
+/* ============================= */
+
+/* MOBILE */
+@media (max-width: 576px) {
+  header {
+    min-height: 35vh;
+  }
+
+  .nav-h1 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
 }
 
-/* NAVBAR */
-.nav-h1 {
-  font-size: 1.3rem;
-  font-weight: bold;
+/* TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+  header {
+    min-height: 45vh;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-text {
+    font-size: 1.05rem;
+  }
 }
 
-.nav-link {
-  font-weight: 500;
+/* DESKTOP */
+@media (min-width: 992px) {
+  header {
+    min-height: 55vh;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    font-size: 1.15rem;
+  }
 }
-
-/* QUIENES SOMOS */
-.quienes-somos {
-  background-color: #f8f9fa;
-}
-
-.titulo-quienes {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.texto-quienes {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-
-/* FOOTER */
-.footer {
-  background-color: #212529;
-  color: #ffffff;
-}
-
-.footer h5 {
-  font-weight: bold;
-}
-
-.footer p {
-  margin-bottom: 0.3rem;
-  font-size: 0.95rem;
-}
-
-.footer hr {
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-
-/* ---------------------------------------------------------------------------------------- */
-                                  /* css productos */
-
-                                  /* TITULO NAV */
-.nav-h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* CARRUSEL */
-.carousel img {
-  max-height: 450px;
-  object-fit: cover;
-}
-
-/* CARDS */
-.card {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.precio {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #198754;
-}
-
-/* FOOTER */
-.footer {
-  background-color: #080808;
-}
-
