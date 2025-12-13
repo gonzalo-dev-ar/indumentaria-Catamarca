@@ -1,175 +1,178 @@
-./* ============================= */
+.
+
+/* ============================= */
 /* RESET BÁSICO */
 /* ============================= */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ============================= */
 /* ESTILOS GENERALES */
 /* ============================= */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
 }
 
 /* ============================= */
 /* HEADER */
 /* ============================= */
 header {
-  background-image: url("../img/img-header-principal.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 50vh;
+    background-image: url("../img/img-header-principal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
 }
 
 /* ============================= */
 /* NAVBAR */
 /* ============================= */
 .navbar {
-  border-bottom: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .nav-h1 {
-  color: rgba(36, 174, 12, 0.8);
-  font-family: "BBH Bartle", sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin: 0;
-  letter-spacing: 1px;
+    color: rgba(36, 174, 12, 0.8);
+    font-family: "BBH Bartle", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 .nav-link {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 /* ============================= */
 /* INDEX – HERO */
 /* ============================= */
 .hero {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .hero-title {
-  font-size: 2rem;
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .hero-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .hero video {
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 /* ============================= */
 /* QUIÉNES SOMOS */
 /* ============================= */
 .quienes-somos {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .titulo-quienes {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .texto-quienes {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 /* ============================= */
 /* CONTACTO */
 /* ============================= */
 .contacto {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 .titulo-contacto {
-  font-size: 1.8rem;
-  font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .texto-contacto {
-  font-size: 1rem;
-  line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Redes sociales */
 .redes a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .icono-red {
-  font-size: 2.2rem;
-  color: #000;
-  transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 2.2rem;
+    color: #000;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icono-red:hover {
-  transform: scale(1.2);
-  color: #198754;
+    transform: scale(1.2);
+    color: #198754;
 }
 
 /* ============================= */
 /* PRODUCTOS */
 /* ============================= */
 .carousel img {
-  max-height: 450px;
-  object-fit: cover;
+    max-height: 450px;
+    object-fit: cover;
 }
 
 .card {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .precio {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #198754;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #198754;
 }
 
 /* ============================= */
 /* FOOTER (UNIFICADO) */
 /* ============================= */
 .footer {
-  background-color: #000;
-  color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 .footer-text {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 /* ============================= */
 /* RESPONSIVE */
 /* ============================= */
 @media (max-width: 768px) {
-  .nav-h1 {
-    font-size: 1.2rem;
-  }
+    .nav-h1 {
+        font-size: 1.2rem;
+    }
 
-  .titulo-quienes,
-  .titulo-contacto,
-  .hero-title {
-    font-size: 1.5rem;
-  }
+    .titulo-quienes,
+    .titulo-contacto,
+    .hero-title {
+        font-size: 1.5rem;
+    }
 
-  .texto-quienes,
-  .texto-contacto,
-  .hero-text {
-    font-size: 0.95rem;
-  }
+    .texto-quienes,
+    .texto-contacto,
+    .hero-text {
+        font-size: 0.95rem;
+    }
 }
+
 /* ---------------------------------------------------------------------------------------------------- */
 
 /* --- CSS BASE (TODO el código que te pasé antes) --- */
@@ -184,56 +187,56 @@ header {
 
 /* MOBILE */
 @media (max-width: 576px) {
-  header {
-    min-height: 35vh;
-  }
+    header {
+        min-height: 35vh;
+    }
 
-  .nav-h1 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
+    .nav-h1 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
 
-  .hero-title {
-    font-size: 1.4rem;
-    text-align: center;
-  }
+    .hero-title {
+        font-size: 1.4rem;
+        text-align: center;
+    }
 
-  .hero-text {
-    font-size: 0.95rem;
-    text-align: center;
-  }
+    .hero-text {
+        font-size: 0.95rem;
+        text-align: center;
+    }
 
-  .footer-text {
-    font-size: 0.8rem;
-  }
+    .footer-text {
+        font-size: 0.8rem;
+    }
 }
 
 /* TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
-  header {
-    min-height: 45vh;
-  }
+    header {
+        min-height: 45vh;
+    }
 
-  .hero-title {
-    font-size: 1.7rem;
-  }
+    .hero-title {
+        font-size: 1.7rem;
+    }
 
-  .hero-text {
-    font-size: 1.05rem;
-  }
+    .hero-text {
+        font-size: 1.05rem;
+    }
 }
 
 /* DESKTOP */
 @media (min-width: 992px) {
-  header {
-    min-height: 55vh;
-  }
+    header {
+        min-height: 55vh;
+    }
 
-  .hero-title {
-    font-size: 2.2rem;
-  }
+    .hero-title {
+        font-size: 2.2rem;
+    }
 
-  .hero-text {
-    font-size: 1.15rem;
-  }
+    .hero-text {
+        font-size: 1.15rem;
+    }
 }
